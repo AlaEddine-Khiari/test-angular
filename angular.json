@@ -60,7 +60,8 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "test-angular:build:production"
+              "browserTarget": "test-angular:build:production",
+              "host": "0.0.0.0"
             },
             "development": {
               "browserTarget": "test-angular:build:development"
