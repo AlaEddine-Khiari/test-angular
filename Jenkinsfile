@@ -10,7 +10,13 @@ pipeline {
                 }
             }
         }
-      
+        stage('Cleaning the project') {
+             steps{
+                script{
+                    sh "npm install"
+                }
+            }
+        }
         stage('Artifact Construction') {
              steps{
                 script{
