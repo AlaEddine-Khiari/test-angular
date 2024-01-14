@@ -13,7 +13,7 @@ pipeline {
         stage('Cleaning the project') {
              steps{
                 script{
-                    sh "npm install"
+                    sh "npm ci"
                 }
             }
         }
@@ -29,7 +29,7 @@ pipeline {
         stage('Build Docker Image') {
              steps{
                 script{
-                    sh "docker build -t alaeddine/test-angular:latest ."
+                    sh "docker build -t alaeddine/test-angular:latest."
                 }
             }
         }
